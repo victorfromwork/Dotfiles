@@ -1,3 +1,12 @@
+# ▌ ▐·▪   ▄▄· ▄▄▄▄▄      ▄▄▄  .▄▄ ·      ▄▄·        ▐ ▄ ·▄▄▄▪   ▄▄ • .▄▄ · 
+#▪█·█▌██ ▐█ ▌▪•██  ▪     ▀▄ █·▐█ ▀.     ▐█ ▌▪▪     •█▌▐█▐▄▄·██ ▐█ ▀ ▪▐█ ▀. 
+#▐█▐█•▐█·██ ▄▄ ▐█.▪ ▄█▀▄ ▐▀▀▄ ▄▀▀▀█▄    ██ ▄▄ ▄█▀▄ ▐█▐▐▌██▪ ▐█·▄█ ▀█▄▄▀▀▀█▄
+# ███ ▐█▌▐███▌ ▐█▌·▐█▌.▐▌▐█•█▌▐█▄▪▐█    ▐███▌▐█▌.▐▌██▐█▌██▌.▐█▌▐█▄▪▐█▐█▄▪▐█
+#. ▀  ▀▀▀·▀▀▀  ▀▀▀  ▀█▄▀▪.▀  ▀ ▀▀▀▀     ·▀▀▀  ▀█▄▀▪▀▀ █▪▀▀▀ ▀▀▀·▀▀▀▀  ▀▀▀▀
+
+#Custom Zsh Config File Edited by Victor Corbett https://github.com/victorfromwork  
+#For Syntax Highlighting sudo apt-get install zsh-syntax-highlighting
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
