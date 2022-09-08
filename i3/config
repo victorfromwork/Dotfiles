@@ -188,8 +188,8 @@ exec --no-startup-id nitrogen --restore
 #Picom
 exec_always --no-startup-id picom -b
 
-# Window Boarders
-for_window [class="^.*"] border pixel 0
+
+#Here is the pertinent part of my config file, and how I have the gaps configured:
 
 # gaps
 # disable window titlebars
@@ -253,3 +253,4 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
