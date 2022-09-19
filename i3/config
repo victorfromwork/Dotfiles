@@ -210,10 +210,10 @@ bindsym $mod+Shift+g gaps inner all set 6; gaps outer all set 2
 bindsym $mod+Shift+n gaps inner all set 0; gaps outer all set 0
 
 # Only enable gaps on a workspace when there is at least one container
-smart_gaps on
+#smart_gaps off
 
 # Activate smart borders (always)
-#smart_borders on
+#smart_borders off
 
 # Activate smart borders (only when there are effectively no gaps)
 #smart_borders no_gaps

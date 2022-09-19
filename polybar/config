@@ -36,7 +36,7 @@ underline = #2596be
 
 [bar/mybar]
 width = 100%
-height = 34pt
+height = 24pt
 radius = 0
 
 ; dpi = 96
@@ -55,9 +55,9 @@ padding-right = 1
 module-margin = 1
 
 separator = |
-separator-foreground = ${colors.disabled}
+separator-foreground = ${colors.secondary}
 
-font-0 = monospace;1
+font-0 = NotoSans-Regular;1
 
 modules-left = xworkspaces xwindow
 modules-right = pulseaudio xkeyboard memory cpu date
@@ -67,13 +67,16 @@ cursor-scroll = ns-resize
 
 enable-ipc = true
 
-; tray-position = right
+tray-position = right
 
 ; wm-restack = generic
 ; wm-restack = bspwm
-; wm-restack = i3
+wm-restack = i3
 
 ; override-redirect = true
+
+scroll-up = "#i3.prev"
+scroll-down = "#i3.next"
 
 [module/xworkspaces]
 type = internal/xworkspaces
@@ -179,3 +182,53 @@ screenchange-reload = true
 pseudo-transparency = true
 
 ; vim:ft=dosini
+
+[module/i3]
+type = internal/i3
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = true
+
+; Show urgent workspaces regardless of whether the workspace is actually hidden 
+; by pin-workspaces.
+;
+; Default: false
+; New in version 3.6.0
+show-urgent = true
+
+; This will split the workspace name on ':'
+; Default: false
+strip-wsnumbers = true
+
+; Sort the workspaces by index instead of the default
+; sorting that groups the workspaces by output
+; Default: false
+index-sort = true
+
+; Create click handler used to focus workspace
+; Default: true
+enable-click = false
+
+; Create scroll handlers used to cycle workspaces
+; Default: true
+enable-scroll = false
+
+; Wrap around when reaching the first/last workspace
+; Default: true
+wrapping-scroll = false
+
+; Set the scroll cycle direction 
+; Default: true
+reverse-scroll = false
+
+; Use fuzzy (partial) matching on labels when assigning 
+; icons to workspaces
+; Example: code;♚ will apply the icon to all workspaces 
+; containing 'code' in the label
+; Default: false
+fuzzy-match = true
