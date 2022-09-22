@@ -193,6 +193,9 @@ exec_always --no-startup-id /home/victor/.config/i3/polybar.sh &
 # Nitrogen (Wallpaper)
 exec --no-startup-id nitrogen --restore
 
+#xrandr
+exec_always --no-startup-id /home/victor/.config/i3/randr.sh 
+
 #Picom
 exec_always --no-startup-id picom -b
 
@@ -204,7 +207,7 @@ exec_always --no-startup-id picom -b
 for_window [class="^.*"] border pixel 0
 
 gaps inner 6
-gaps outer 2
+gaps outer 5
 
 bindsym $mod+Shift+g gaps inner all set 6; gaps outer all set 2
 bindsym $mod+Shift+n gaps inner all set 0; gaps outer all set 0
