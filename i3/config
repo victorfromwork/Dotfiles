@@ -47,9 +47,12 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
+ 
 # start a terminal
 bindsym $mod+Return exec kitty
+
+# keybinding to lock screen
+bindsym $mod+control+l exec --no-startup-id "i3lock-fancy" 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -206,8 +209,8 @@ exec_always --no-startup-id picom -b
 # disable window titlebars
 for_window [class="^.*"] border pixel 0
 
-gaps inner 6
-gaps outer 5
+gaps inner 15
+gaps outer 8
 
 bindsym $mod+Shift+g gaps inner all set 6; gaps outer all set 2
 bindsym $mod+Shift+n gaps inner all set 0; gaps outer all set 0
