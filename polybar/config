@@ -34,6 +34,22 @@ alert = #A54242
 disabled = #707880
 underline = #2596be
 clear = #00
+bg = #2E3440
+bg-alt = #3B4252
+fg = #ECEFF4
+fg-alt = #E5E9F0
+blue = #81A1C1
+cyan = #88C0D0
+green = #A3BE8C
+orange = #D08770
+purple = #B48EAD
+red = #BF616A
+yellow = #EBCB8B
+black = #000
+white = #FFF
+trans = #00000000
+semi-trans-black = #aa000000
+
 
 [bar/mybar2]
 
@@ -63,8 +79,9 @@ padding-bottom = 3
 
 module-margin = 1
 
-separator = |
-separator-foreground = ${colors.secondary}   
+separator = |||
+separator-foreground = ${colors.secondary}
+separator-padding = 1   
 
 font-0 = NotoSans-Regular;1
 
@@ -83,7 +100,7 @@ enable-ipc = true
 ; wm-restack = bspwm
 wm-restack = i3
 
-; override-redirect = true
+;override-redirect = true
 
 scroll-up = "#i3.prev"
 scroll-down = "#i3.next"
@@ -108,6 +125,7 @@ border-color = #ffffff
 
 padding-left = 1
 padding-right = 1
+padding-bottom = 1
 
 module-margin = 1
 
@@ -131,7 +149,7 @@ tray-position = right
 ; wm-restack = bspwm
 wm-restack = i3
 
-; override-redirect = true
+;override-redirect = true
 
 scroll-up = "#i3.prev"
 scroll-down = "#i3.next"
@@ -311,7 +329,7 @@ label-mode-background = ${colors.background}
 ;   %index%
 ;   %output%
 ; Default: %icon% %name%
-label-focused = %index%
+label-focused = %name%
 label-focused-foreground = ${colors.primary}
 label-focused-background = ${colors.background}
 label-focused-underline = ${colors.underline}
@@ -323,7 +341,7 @@ label-focused-padding = 2
 ;   %index%
 ;   %output%
 ; Default: %icon% %name%
-label-unfocused = %index%
+label-unfocused = %name%
 label-unfocused-padding = 2
 
 ; Available tokens:
@@ -332,7 +350,7 @@ label-unfocused-padding = 2
 ;   %index%
 ;   %output%
 ; Default: %icon% %name%
-label-visible = %index%
+label-visible = %name%
 label-visible-underline = ${colors.primary}
 label-visible-padding = 2
 
@@ -342,14 +360,14 @@ label-visible-padding = 2
 ;   %index%
 ;   %output%
 ; Default: %icon% %name%
-label-urgent = %index%
+label-urgent = %name%
 label-urgent-foreground = ${colors.primary}
 label-urgent-background = ${colors.background.alt}
 label-urgent-padding = 2
 
 ; Separator in between workspaces
 label-separator =
-label-separator-padding = 2
+label-separator-padding = 1
 label-separator-foreground = ${colors.primary}
 
 [module/battery]
